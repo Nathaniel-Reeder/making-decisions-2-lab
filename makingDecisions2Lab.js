@@ -192,14 +192,28 @@ switch(letterGrade){
   ...
 */
 
-for (let i = 1; i <=100; i++) {
-  if (i % 15 === 0) {
-    console.log('DevMountain')
-  } else if (i % 3 === 0) {
-    console.log('Dev')
-  } else if (i % 5 === 0) {
-    console.log('Mountain')
-  } else {
-    console.log(i)
-  }
+// for (let i = 1; i <=100; i++) {
+//   if (i % 15 === 0) {
+//     console.log('DevMountain')
+//   } else if (i % 3 === 0) {
+//     console.log('Dev')
+//   } else if (i % 5 === 0) {
+//     console.log('Mountain')
+//   } else {
+//     console.log(i)
+//   }
+// }
+
+//Code Here
+
+let countTo =100;
+let numArray = [];
+
+for (let i = 1; i <= countTo; i++){
+  if (i % 15 === 0) numArray.push([i, "devmountain"]);
+  else if (i % 3 === 0) numArray.push([i, "dev"]);
+  else if (i % 5 === 0) numArray.push([i, "moutain"]);
+  else numArray.push([i])
+
+  console.log(numArray[i - 1])
 }
